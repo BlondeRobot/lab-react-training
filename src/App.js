@@ -8,6 +8,7 @@ import CreditCard from './Components/CreditCard';
 import Rating from './Components/Rating';
 import DriverCard from './Components/DriverCard';
 import LikeButton from './Components/LikeButton';
+import ClickablePicture from './Components/ClickablePicture';
 
 function App() {
   return (
@@ -98,6 +99,10 @@ function App() {
       />
       <LikeButton />
       <LikeButton />
+      <ClickablePicture
+        img="./assets/images/maxence.png"
+        imgClicked='./assets/images/maxence-glasses.png'
+      />
     </div>
   );
 }
