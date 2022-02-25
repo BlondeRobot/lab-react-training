@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import IdCard from './Components/IdCard';
 import Greetings from './Components/Greetings';
@@ -7,24 +7,11 @@ import BoxColor from './Components/BoxColor';
 import CreditCard from './Components/CreditCard';
 import Rating from './Components/Rating';
 import DriverCard from './Components/DriverCard';
+import LikeButton from './Components/LikeButton';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
       <IdCard
         lastName="Doe"
         firstName="John"
@@ -109,6 +96,8 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <LikeButton />
+      <LikeButton />
     </div>
   );
 }
